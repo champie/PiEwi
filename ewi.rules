@@ -1,0 +1,3 @@
+# This file needs to exist (or be linked to from) /etc/udev/rules.d/
+ATTRS{idVendor}=="09e8", ATTRS{idProduct}=="006d", ATTR{bInterfaceNumber}=="00", SUBSYSTEM=="usb", ACTION=="add", RUN+="/home/pi/midi/ewi.sh"
+#ATTRS{idVendor}=="0582", ATTRS{idProduct}=="0114", RUN+="/home/pi/midi/ewi.sh"
